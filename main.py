@@ -38,9 +38,19 @@ plt.bar(incidents_per_state.index, incidents_per_state.values, color='steelblue'
 plt.xlabel("U.S. State")
 plt.ylabel("Number of Aviation Accidents")
 plt.title("Aviation Accidents per U.S. State")
-plt.xticks(rotation=90)  # Rotate for better readability
+plt.xticks(rotation=90)  
 
 plt.tight_layout()
+plt.show()
+
+#top 10 states
+top_states = incidents_per_state.head(10)
+
+plt.figure(figsize=(10, 6))
+plt.bar(top_states.index, top_states.values, color='salmon')
+plt.xlabel("U.S. State")
+plt.ylabel("Number of Accidents")
+plt.title("Top 10 States by Aviation Accidents")
 plt.show()
 
 #Incidents by Year
