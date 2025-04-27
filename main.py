@@ -54,7 +54,6 @@ plt.title("Top 10 States by Aviation Accidents")
 plt.show()
 
 #Incidents by Year
-
 merged_df['Event.Date'] = pd.to_datetime(merged_df['Event.Date'])
 merged_df['Year'] = merged_df['Event.Date'].dt.year
 
