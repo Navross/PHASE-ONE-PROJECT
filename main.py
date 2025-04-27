@@ -1,5 +1,6 @@
 
 import pandas as pd
+import matplotlib.pyplot as plt
 
 #Load AviationData.csv
 aviation_df = pd.read_csv("AviationData.csv", encoding='latin-1')
@@ -22,20 +23,34 @@ aviation_df_cleaned['State'] = aviation_df_cleaned['Location'].str.extract(r',\s
 merged_df = pd.merge(aviation_df_cleaned, state_codes_df, left_on='State', right_on='Abbreviation', how='left')
 print(merged_df[['Location', 'State']].head())
 
+#Save the merged data
+merged_df.to_csv("Cleaned_AviationData.csv", index=False)
+
 # Incidents per State
-incidents_per_state = merged_df['State'].value_counts()
+incidents_per_state = merged_df['State'].value_counts().sort_values(ascending=False)
 print("Top States by Incidents:")
 print(incidents_per_state.head(10))
 
-#Incidents by Year
-import matplotlib.pyplot as plt
+#visualize incidents per state
+plt.figure(figsize=(14, 7))
+plt.bar(incidents_per_state.index, incidents_per_state.values, color='steelblue')
 
-merged_df['Event.Date'] = pd.to_datetime(merged_df['Event.Date'], errors='coerce')
+plt.xlabel("U.S. State")
+plt.ylabel("Number of Aviation Accidents")
+plt.title("Aviation Accidents per U.S. State")
+plt.xticks(rotation=90)  # Rotate for better readability
+
+plt.tight_layout()
+plt.show()
+
+#Incidents by Year
+
+merged_df['Event.Date'] = pd.to_datetime(merged_df['Event.Date'])
 merged_df['Year'] = merged_df['Event.Date'].dt.year
 
 yearly_counts = merged_df['Year'].value_counts().sort_index()
 
-plt.figure(figsize=(12, 6))
+plt.figure(figsize=(10, 5))
 plt.bar(yearly_counts.index.astype(str), yearly_counts.values)
 plt.title("Aviation Incidents per Year")
 plt.xlabel("Year")
@@ -43,3 +58,4 @@ plt.ylabel("Number of Incidents")
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
+
