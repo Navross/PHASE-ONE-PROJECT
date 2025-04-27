@@ -15,10 +15,10 @@
 
 
 
-    ## 📌 Features
+   ##  Features :
 
-     - Cleans and handles missing data
-     - Joins US state codes with aviation data
-     - Extracts key columns for analysis
-     - Provides basic visualizations (e.g., accident counts by state)
-     - Uses pandas and matplotlib.
+   - Cleans and handles missing data
+   - Joins US state codes with aviation data
+   - Extracts key columns for analysis
+   - Provides basic visualizations (e.g., accident counts by state)
+   - Uses pandas and matplotlib.
