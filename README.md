@@ -14,7 +14,7 @@
    - `presentation.pdf`: Presentation slides.
    - `Aviation_risk_analysis.ipynb`: Project notebook.
    📓 Project Notebook
-   [View the analysis notebook](./analysis.ipynb)
+   [View the analysis notebook](./Aviation_risk_analysis.ipynb)
 
 
 
