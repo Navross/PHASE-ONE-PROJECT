@@ -9,8 +9,10 @@
    - `main.py`: Main script for data cleaning and analysis.
    - `AviationData.csv`: Raw dataset from NTSB.
    - `USState_Codes.csv`: Mapping of state abbreviations to names.
-   -`Cleaned_AviationData.csv`: Merged and cleaned data.
+   - `Cleaned_AviationData.csv`: Merged and cleaned data.
    - `README.md`: This file.
+   - `presentation.pdf`: Presentation slides.
+   - `Aviation_risk_analysis.ipynb`: Presentation slides.
 
     ## 📌 Features
   - Cleans and handles missing data
