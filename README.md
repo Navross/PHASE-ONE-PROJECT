@@ -12,7 +12,10 @@
    - `Cleaned_AviationData.csv`: Merged and cleaned data.
    - `README.md`: This file.
    - `presentation.pdf`: Presentation slides.
-   - `Aviation_risk_analysis.ipynb`: Presentation slides.
+   - `Aviation_risk_analysis.ipynb`: Project notebook.
+   📓 Project Notebook
+   [View the analysis notebook](./analysis.ipynb)
+
 
 
     ## 📌 Features
