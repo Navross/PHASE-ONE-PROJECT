@@ -9,9 +9,9 @@
    - Project Notebook [View the analysis notebook](./Aviation_risk_analysis.ipynb)
    - Project Presentation [View the analysis presentation](./presentation.pdf)
    - Merged Aviation data [View the merged data](./Cleaned_AviationData.csv)
-   - Python script for the project [View the merged data](./main.py)
-   - Aviation data used [View the merged data](./AviationData.csv)
-   - US States codes data used [View the merged data](./USState_Codes.csv)
+   - Python script for the project [View the python script](./main.py)
+   - Aviation data used [View the aviation data](./AviationData.csv)
+   - US States codes data used [View the states codes data](./USState_Codes.csv)
 
 
 
