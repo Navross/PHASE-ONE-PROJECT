@@ -9,6 +9,7 @@
    - `main.py`: Main script for data cleaning and analysis.
    - `AviationData.csv`: Raw dataset from NTSB.
    - `USState_Codes.csv`: Mapping of state abbreviations to names.
+   -`Cleaned_AviationData.csv`: Merged and cleaned data.
    - `README.md`: This file.
 
     ## 📌 Features
@@ -16,4 +17,4 @@
   - Joins US state codes with aviation data
   - Extracts key columns for analysis
   - Provides basic visualizations (e.g., accident counts by state)
-  - Uses pandas, matplotlib, and numpy
+  - Uses pandas and matplotlib.
